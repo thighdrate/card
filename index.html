@@ -333,7 +333,7 @@
             z-index: 2;
             padding: 1rem 1rem 1rem 1rem;
         }
-
+       
         #main {
             --alignment: center;
             --flex-alignment: center;
@@ -354,13 +354,10 @@
             position: relative;
             text-align: var(--alignment);
             z-index: 1;
-            background-color: #141414;
-            box-shadow: 0rem 1.75rem 4rem 0rem rgba(0, 0, 0, 0.09);
             border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
-            border-top: solid 1px #000000;
-            border-right: solid 1px #000000;
-            border-bottom: solid 1px #000000;
-            border-left: solid 1px #000000;
+            background-color: rgba(20, 20, 20, 0.7) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36) !important;
             transition: opacity 0.625s ease 0.125s, transform 0.625s ease 0.125s;
         }
 
@@ -379,6 +376,8 @@
             width: var(--width);
             z-index: 1;
             padding: var(--padding-vertical) var(--padding-horizontal);
+            backdrop-filter: blur(10px) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
         }
 
         #main>.inner>* {
@@ -1253,27 +1252,6 @@
     
     <style>
         /* Custom css */
-        /* Custom transparency styles */
-        #main {
-            background-color: rgba(20, 20, 20, 0.7) !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36) !important;
-        }
-        
-        /* Enhanced glass-like effect */
-        #main > .inner {
-            backdrop-filter: blur(10px) !important;
-            -webkit-backdrop-filter: blur(10px) !important;
-        }
-        
-        /* Restore original background without animation */
-        body:before {
-            content: '' !important;
-            background-image: url('bg.jpg?v=9b2cfa82') !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-size: cover !important;
-        }        
         
         /* Subtle floating animations for images */
         @keyframes float {
