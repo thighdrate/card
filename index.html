@@ -362,6 +362,8 @@
         }
 
         #main>.inner {
+            backdrop-filter: blur(10px) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
             --border-radius-tl: calc(0.75rem - 1px);
             --border-radius-tr: calc(0.75rem - 1px);
             --border-radius-br: calc(0.75rem - 1px);
@@ -376,8 +378,6 @@
             width: var(--width);
             z-index: 1;
             padding: var(--padding-vertical) var(--padding-horizontal);
-            backdrop-filter: blur(10px) !important;
-            -webkit-backdrop-filter: blur(10px) !important;
         }
 
         #main>.inner>* {
