@@ -335,6 +335,8 @@
         }
        
         #main {
+            backdrop-filter: blur(10px) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
             --alignment: center;
             --flex-alignment: center;
             --indent-left: 1;
@@ -362,8 +364,6 @@
         }
 
         #main>.inner {
-            backdrop-filter: blur(10px) !important;
-            -webkit-backdrop-filter: blur(10px) !important;
             --border-radius-tl: calc(0.75rem - 1px);
             --border-radius-tr: calc(0.75rem - 1px);
             --border-radius-br: calc(0.75rem - 1px);
